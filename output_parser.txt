@@ -1,0 +1,87 @@
+|- ProgramType: Program
+    |- PreprocessorDirective: #include
+        |- Header file: <iostream>
+    |- Function: int main
+        |- Parameters: Parameters
+        |- Block: int
+            |- Declare Array: int arr
+                |- Square Block: arr
+                |- End Square Block: ]
+                |- Square Block: arr
+                |- End Square Block: ]
+                |- Assignment: =
+                |- Block: Declare Array
+                    |- Block: Block
+                        |- Value: int 1
+                        |- Comma: ,
+                        |- Value: int 2
+                        |- Comma: ,
+                        |- Value: int 3
+                    |- End Block: Declare Array
+                    |- Comma: ,
+                    |- Block: Block
+                        |- Value: int 4
+                        |- Comma: ,
+                        |- Value: int 5
+                        |- Comma: ,
+                        |- Value: int 6
+                    |- End Block: Declare Array
+                    |- Comma: ,
+                    |- Block: Block
+                        |- Value: int 7
+                        |- Comma: ,
+                        |- Value: int 8
+                        |- Comma: ,
+                        |- Value: int 9
+                    |- End Block: Declare Array
+                    |- Comma: ,
+                |- End Block: arr
+            |- Statement: ;
+            |- ForLoop: for
+                |- Parameters: Parameters
+                    |- Declare: int i
+                        |- Assignment: =
+                        |- Value: int 0
+                    |- Statement: ;
+                    |- Variable: int i
+                        |- Comparison: <
+                        |- Value: int 3
+                    |- Statement: ;
+                    |- Operator: ++
+                    |- Variable: int i
+                |- Block: ForLoop
+                    |- ForLoop: for
+                        |- Parameters: Parameters
+                            |- Declare: int j
+                                |- Assignment: =
+                                |- Value: int 0
+                            |- Statement: ;
+                            |- Variable: int j
+                                |- Comparison: <
+                                |- Value: int 3
+                            |- Statement: ;
+                            |- Operator: ++
+                            |- Variable: int j
+                        |- Block: ForLoop
+                            |- Cout: cout
+                                |- Operator Input: <<
+                                |- Array: int arr
+                                    |- Square Block: arr
+                                        |- Variable: int i
+                                    |- End Square Block: ]
+                                    |- Square Block: arr
+                                        |- Variable: int j
+                                    |- End Square Block: ]
+                                    |- Operator Input: <<
+                                    |- Value: str ' '
+                            |- Statement: ;
+                        |- End Block: for
+                    |- Cout: cout
+                        |- Operator Input: <<
+                        |- Endl: endl
+                    |- Statement: ;
+                |- End Block: for
+            |- ReturnStatement: return
+                |- Value: int 0
+                |- Statement: ;
+        |- End Block: main
